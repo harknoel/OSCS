@@ -24,4 +24,5 @@
             and making a positive impact in the world.
         </p>
     </section>
+    
 <?php require_once 'includes/footer.php'; ?>

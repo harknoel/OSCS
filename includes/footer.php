@@ -1,3 +1,4 @@
+</main>
 <script src="js/site.js"></script>
 </body>
 </html>

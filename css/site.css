@@ -56,10 +56,6 @@ img {
     border-radius: 20px;
 }
 
-.about-me-container {
-    margin: 50px;
-}
-
 section {
     display: flex;
     flex-flow: column;
@@ -93,6 +89,15 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+	margin-bottom: 30px;
+}
+
+body {
+	background-color: #E7EFE1;
+}
+
+.aboutme-container {
+	margin: 60px 0px;
 }
 
 /* ABOUT ME */
