@@ -29,13 +29,13 @@
 			</li>
 			<li class="<?php echo $aboutme ?>">
 				<a href="aboutme.php">
-					<i class='bx bxs-shopping-bag-alt' ></i>
+					<i class='bx bxs-user'></i>
 					<span class="text">About Me</span>
 				</a>
 			</li>
 			<li class="<?php echo $contact ?>">
 				<a href="#">
-					<i class='bx bxs-doughnut-chart' ></i>
+					<i class='bx bxs-phone' ></i>
 					<span class="text">Contact US</span>
 				</a>
 			</li>
