@@ -1,5 +1,8 @@
 <?php 
     $title = 'Online Shopping Cart System';
+    $dashboard = 'active';
+	$aboutme = '';
+    $contact = '';
     require_once 'includes/header.php'; 
 ?>
 

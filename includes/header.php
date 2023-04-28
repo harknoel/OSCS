@@ -21,19 +21,19 @@
 			<span class="text">Online Shopping Cart System</span>
 		</a>
 		<ul class="side-menu top">
-			<li class="active">
-				<a href="#">
+			<li class="<?php echo $dashboard ?>">
+				<a href="dashboard.php">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
 				</a>
 			</li>
-			<li>
-				<a href="#">
+			<li class="<?php echo $aboutme ?>">
+				<a href="aboutme.php">
 					<i class='bx bxs-shopping-bag-alt' ></i>
 					<span class="text">About Me</span>
 				</a>
 			</li>
-			<li>
+			<li class="<?php echo $contact ?>">
 				<a href="#">
 					<i class='bx bxs-doughnut-chart' ></i>
 					<span class="text">Contact US</span>

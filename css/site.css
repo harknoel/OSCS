@@ -47,6 +47,56 @@ body {
 	overflow-x: hidden;
 }
 
+/* ABOUT ME */
+
+img {
+    width: 300px;
+    height: auto;
+    border: white 10px solid;
+    border-radius: 20px;
+}
+
+.about-me-container {
+    margin: 50px;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+}
+
+.profile-info {
+    text-align: center;
+    width: 400px;
+}
+
+.profile-info h1 {
+    font-size: 65px;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+}
+
+.student-info {
+    color: #1FC667;
+}
+
+.description {
+    margin: 0 20% 0 20%;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOUT ME */
+
 /* SIDEBAR */
 #sidebar {
 	position: fixed;
