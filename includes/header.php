@@ -88,4 +88,5 @@
 	</nav>
 	<!-- NAVBAR -->
 
+	<!-- MAIN -->
 	<main>
