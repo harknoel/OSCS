@@ -17,7 +17,7 @@
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="#" class="brand">
-			<i class='bx bxs-smile'></i>
+			<i class='bx bxs-cart-alt'></i>
 			<span class="text">AdminHub</span>
 		</a>
 		<ul class="side-menu top">
@@ -76,7 +76,7 @@
 	<!-- NAVBAR -->
 	<nav>
 		<i class='bx bx-menu' ></i>
-		<a href="#" class="nav-link">Categories</a>
+		<!-- <a href="#" class="nav-link">Categories</a> -->
 		<form action="#">
 			<div class="form-input">
 				<input type="search" placeholder="Search...">
