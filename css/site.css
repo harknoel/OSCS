@@ -29,6 +29,7 @@ li {
 	--light-yellow: #FFF2C6;
 	--orange: #FD7238;
 	--light-orange: #FFE0D3;
+	--green: #475b4d;
 }
 
 html {
@@ -72,12 +73,13 @@ body {
 	height: 56px;
 	display: flex;
 	align-items: center;
-	color: var(--blue);
+	color: var(--green);
 	position: sticky;
 	top: 0;
 	left: 0;
 	background: var(--light);
 	z-index: 500;
+	padding-top: 10px;
 	padding-bottom: 20px;
 	box-sizing: content-box;
 }
@@ -136,7 +138,7 @@ body {
 	overflow-x: hidden;
 }
 #sidebar .side-menu.top li.active a {
-	color: var(--blue);
+	color: var(--green);
 }
 #sidebar.hide .side-menu li a {
 	width: calc(48px - (4px * 2));
@@ -146,7 +148,7 @@ body {
 	color: var(--red);
 }
 #sidebar .side-menu.top li a:hover {
-	color: var(--blue);
+	color: var(--green);
 }
 #sidebar .side-menu li a .bx {
 	min-width: calc(60px  - ((4px + 6px) * 2));
@@ -210,7 +212,7 @@ body {
 	transition: .3s ease;
 }
 #content nav .nav-link:hover {
-	color: var(--blue);
+	color: var(--green);
 }
 #content nav form {
 	max-width: 400px;
@@ -239,7 +241,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: var(--blue);
+	background: var(--green);
 	color: var(--light);
 	font-size: 18px;
 	border: none;
@@ -289,7 +291,7 @@ body {
 	left: 2px;
 	bottom: 2px;
 	width: calc(25px - 4px);
-	background: var(--blue);
+	background: var(--green);
 	border-radius: 50%;
 	transition: all .3s ease;
 }
@@ -336,14 +338,14 @@ body {
 	pointer-events: none;
 }
 #content main .head-title .left .breadcrumb li a.active {
-	color: var(--blue);
+	color: var(--green);
 	pointer-events: unset;
 }
 #content main .head-title .btn-download {
 	height: 36px;
 	padding: 0 16px;
 	border-radius: 36px;
-	background: var(--blue);
+	background: var(--green);
 	color: var(--light);
 	display: flex;
 	justify-content: center;
@@ -380,7 +382,7 @@ body {
 }
 #content main .box-info li:nth-child(1) .bx {
 	background: var(--light-blue);
-	color: var(--blue);
+	color: var(--green);
 }
 #content main .box-info li:nth-child(2) .bx {
 	background: var(--light-yellow);
