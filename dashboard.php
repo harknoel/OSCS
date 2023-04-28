@@ -35,7 +35,7 @@
 							<td><?php echo $row['guestName'] ?></td>
 							<td><?php echo $row['country'] ?></td>
 							<td>
-								<a class="status view" href = "">VIEW</a>                        
+								<a class="status view" href = "guestuser.php">VIEW</a>                        
 								<a class="status delete" href = "">DELETE</a>
 							</td>
 						</tr>
