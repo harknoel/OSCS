@@ -32,8 +32,8 @@
 							<td><?php echo $row['guestName'] ?></td>
 							<td><?php echo $row['country'] ?></td>
 							<td>
-								<a href = "">VIEW</a>                        
-								<a href = "">DELETE</a>
+								<a class="status view" href = "">VIEW</a>                        
+								<a class="status delete" href = "">DELETE</a>
 							</td>
 						</tr>
 						<?php endwhile;?>
