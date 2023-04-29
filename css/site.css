@@ -160,7 +160,7 @@ p {
 	top: 0;
 	left: 0;
 	width: 280px;
-	height: 100%;
+	height: calc(100% - 50px);
 	background: var(--light);
 	z-index: 2000;
 	font-family: var(--lato);
@@ -579,6 +579,20 @@ p {
 }
 /* MAIN */
 /* CONTENT */
+
+/* FOOTER */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  font-family: var(--lato);
+  background-color: #967653;
+  color: var(--light-green);
+  text-align: center;
+}
+/* FOOTER */
 
 
 @media screen and (max-width: 768px) {

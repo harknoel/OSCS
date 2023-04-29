@@ -19,7 +19,7 @@
 					<i class='bx bx-search' ></i>
 					<i class='bx bx-filter' ></i>
 				</div>
-				<a href="" class="addButton">Add Guest</a>
+				<a href="guestuser.php" class="addButton">Add Guest</a>
 				<table>
 					<thead>
 						<tr>
