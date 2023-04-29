@@ -14,10 +14,11 @@
 		<div class="table-data">
 			<div class="order">
 				<div class="head">
-					<h3>Guest List</h3>
+					<h3>Guest List</h3>	
 					<i class='bx bx-search' ></i>
 					<i class='bx bx-filter' ></i>
 				</div>
+				<a href="" class="addButton">Add Guest</a>
 				<table>
 					<thead>
 						<tr>

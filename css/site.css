@@ -47,6 +47,14 @@ body {
 	overflow-x: hidden;
 }
 
+.addButton {
+	font-size: 10px;
+	padding: 6px 16px;
+	color: var(--light);
+	font-weight: 700;
+	background: var(--blue);
+}
+
 /* ABOUT ME */
 
 img {
@@ -499,10 +507,6 @@ p {
 #content main .box-info li .text p {
 	color: var(--dark);	
 }
-
-
-
-
 
 #content main .table-data {
 	display: flex;
