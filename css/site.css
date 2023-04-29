@@ -588,7 +588,7 @@ footer {
   height: 50px;
   width: 100%;
   font-family: var(--lato);
-  background-color: #967653;
+  background-color: var(--green);
   color: var(--light-green);
   text-align: center;
 }
