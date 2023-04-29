@@ -1,5 +1,6 @@
 <?php 
-    $title = 'Online Shopping Cart System';
+    $title = 'Dashboard';
+    $home = '';
     $dashboard = 'active';
 	$aboutme = '';
     $contact = '';

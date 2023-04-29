@@ -21,6 +21,12 @@
 			<span class="text">Online Shopping Cart System</span>
 		</a>
 		<ul class="side-menu top">
+			<li class="<?php echo $home ?>">
+				<a href="index.php">
+					<i class='bx bxs-home'></i>
+					<span class="text">Home</span>
+				</a>
+			</li>
 			<li class="<?php echo $dashboard ?>">
 				<a href="dashboard.php">
 					<i class='bx bxs-dashboard' ></i>
