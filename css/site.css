@@ -30,6 +30,7 @@ li {
 	--orange: #FD7238;
 	--light-orange: #FFE0D3;
 	--green: #475b4d;
+	--light-green: #E7EFE1;
 }
 
 html {
@@ -207,7 +208,7 @@ p {
 	padding: 4px;
 }
 #sidebar .side-menu li.active {
-	background: var(--grey);
+	background: var(--light-green);
 	position: relative;
 }
 #sidebar .side-menu li.active::before {
