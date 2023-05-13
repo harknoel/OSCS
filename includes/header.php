@@ -65,6 +65,7 @@
 		</form>
 	</nav>
 	<!-- NAVBAR -->
-	
+
 	<!-- MAIN -->
 	<main>
+		<?php session_start() ?>

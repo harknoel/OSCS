@@ -7,9 +7,9 @@
     require_once 'includes/header.php'; 
 ?>
 
-<P>Hello, John</P>
+<P>Hello, <?php echo $_SESSION['username']?></P>
 <div class="settings">
-    <a href="">Edit Profile</a>
+    <a href="updateProfile.php">Edit Profile</a>
     <a href="">Logout</a>
 </div>
 

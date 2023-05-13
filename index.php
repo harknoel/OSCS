@@ -2,7 +2,6 @@
 $title = "Login";
 include 'connect.php';
 
-session_start();
 
 if (isset($_POST['btnLogin'])) {
     $uname = $_POST['txtusername'];
@@ -25,7 +24,8 @@ if (isset($_POST['btnLogin'])) {
             alert('Incorrect password');
          </script>";
     } else {
-        $_SESSION['username'] = $row[0];
+        session_start();
+        $_SESSION['username'] = $row[1];
         header("location: main.php");
     }
 }
