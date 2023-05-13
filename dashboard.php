@@ -4,12 +4,13 @@
     $dashboard = 'active';
 	$aboutme = '';
     $contact = '';
+	include 'connect.php';
     require_once 'includes/header.php'; 
 ?>
 
 <?php
-	$mysqli = new mysqli('localhost', 'root','','dbf2bontilaohark') or die (mysqli_error($mysqli));
-	$resultset = $mysqli->query("SELECT * from tblGuest") or die($mysqli->error);	
+	$query = 'SELECT * FROM tblguest';
+	$resultset = mysqli_query($con, $query);	
 ?>
 
 		<div class="table-data">
