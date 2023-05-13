@@ -5,20 +5,16 @@ include 'connect.php';
 session_start();
 
 if (isset($_POST['btnLogin'])) {
-    $uname = $_POST['username'];
-    $pwd = $_POST['password'];
-    $sql = "select * from tbluseraccount where username='" . $uname . "'";
+    $uname = $_POST['txtusername'];
+    $pwd = $_POST['txtpassword'];
 
+    $sql = "select * from tblaccount where username='" . $uname . "'";
     $result = mysqli_query($con, $sql);
-
     $count = mysqli_num_rows($result);
-
-
 
     $row = mysqli_fetch_array($result);
     echo $uname;
     echo $pwd;
-
 
     if ($count == 0) {
         echo "<script language='javascript'>
@@ -30,13 +26,7 @@ if (isset($_POST['btnLogin'])) {
          </script>";
     } else {
         $_SESSION['username'] = $row[0];
-        if ($row[5] == 0) {
-
-            header("location: main.php");
-        } elseif ($row[5] == 1) {
-
-            header("location: mainAdmin.php");
-        }
+        header("location: index.php");
     }
 }
 ?>
@@ -88,8 +78,8 @@ if (isset($_POST['btnLogin'])) {
 <div class="container">
     <h2>Login</h2>
     <form action="login.php" method="POST">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Login">
+        <input type="text" name="txtusername" placeholder="Username" required>
+        <input type="password" name="txtpassword" placeholder="Password" required>
+        <input type="submit" name="btnLogin" value="Login">
     </form>
 </div>
