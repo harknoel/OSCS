@@ -72,6 +72,20 @@ if (isset($_POST['btnLogin'])) {
     .container input[type="submit"]:hover {
         background-color: #45a049;
     }
+
+    .container p {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .container p a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .container p a:hover {
+        text-decoration: underline;
+    }
 </style>
 
 <div class="container">
@@ -81,4 +95,5 @@ if (isset($_POST['btnLogin'])) {
         <input type="password" name="txtpassword" placeholder="Password" required>
         <input type="submit" name="btnLogin" value="Login">
     </form>
+    <p>Don't have an account? <a href="register.php">Register</a></p>
 </div>
