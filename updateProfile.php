@@ -7,7 +7,7 @@
     if($_SESSION['username'] == "")
         header("location: login.php");
 
-    $sql = "select * from tblaccount where username = '".$_SESSION['username']."'";
+    $sql = "select * from tbluseraccount where username = '".$_SESSION['username']."'";
     $res = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($res);
     if(isset($_POST['btnUpdate'])) {
@@ -27,9 +27,9 @@
 
 <form method="POST">
     <pre>
-        Input password:<input type="password" name="txtPassword" value="<?php echo $row[1]; ?>" >
-        Input firstname:<input type="text" name="txtFirstname" value="<?php echo $row[2]; ?>" >
-        Input lastname:<input type="text" name="txtLastname" value="<?php echo $row[3]; ?>" >
+        Input password:<input type="password" name="txtPassword" value="<?php echo $row[2]; ?>" >
+        Input firstname:<input type="text" name="txtFirstname" value="<?php echo $row[3]; ?>" >
+        Input lastname:<input type="text" name="txtLastname" value="<?php echo $row[4]; ?>" >
         <input type="submit" name = "btnUpdate" value="Update">
     </pre>
 </form>

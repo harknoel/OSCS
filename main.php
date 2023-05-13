@@ -10,7 +10,7 @@
 <P>Hello, <?php echo $_SESSION['username']?></P>
 <div class="settings">
     <a href="updateProfile.php">Edit Profile</a>
-    <a href="">Logout</a>
+    <a href="index.php">Logout</a>
 </div>
 
 

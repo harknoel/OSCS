@@ -2,29 +2,27 @@
 $title = "Login";
 include 'connect.php';
 
+session_start();
 
 if (isset($_POST['btnLogin'])) {
     $uname = $_POST['txtusername'];
     $pwd = $_POST['txtpassword'];
 
-    $sql = "select * from tblaccount where username='" . $uname . "'";
+    $sql = "select * from tbluseraccount where username='" . $uname . "'";
     $result = mysqli_query($con, $sql);
     $count = mysqli_num_rows($result);
 
     $row = mysqli_fetch_array($result);
-    echo $uname;
-    echo $pwd;
-
+    
     if ($count == 0) {
         echo "<script language='javascript'>
             alert('username not existing.');
             </script>";
-    } else if ($row[1] != $pwd) {
+    } else if ($row[2] != $pwd) {
         echo "<script language='javascript'>
             alert('Incorrect password');
          </script>";
     } else {
-        session_start();
         $_SESSION['username'] = $row[1];
         header("location: main.php");
     }
