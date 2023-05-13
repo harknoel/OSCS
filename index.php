@@ -2,7 +2,7 @@
 $title = "Login";
 include 'connect.php';
 
-session_start();
+session_unset();
 
 if (isset($_POST['btnLogin'])) {
     $uname = $_POST['txtusername'];
@@ -13,7 +13,7 @@ if (isset($_POST['btnLogin'])) {
     $count = mysqli_num_rows($result);
 
     $row = mysqli_fetch_array($result);
-    
+
     if ($count == 0) {
         echo "<script language='javascript'>
             alert('username not existing.');
@@ -23,6 +23,7 @@ if (isset($_POST['btnLogin'])) {
             alert('Incorrect password');
          </script>";
     } else {
+        session_start();
         $_SESSION['username'] = $row[1];
         header("location: main.php");
     }
