@@ -7,7 +7,9 @@
 	include 'connect.php';
     require_once 'includes/header.php'; 
 ?>
-
+<!-- MAIN -->
+<main>
+	
 <?php
 	$query = 'SELECT * FROM tblguest';
 	$resultset = mysqli_query($con, $query);	

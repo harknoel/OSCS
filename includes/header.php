@@ -22,7 +22,7 @@
 		</a>
 		<ul class="side-menu top">
 			<li class="<?php echo $home ?>">
-				<a href="index.php">
+				<a href="main.php">
 					<i class='bx bxs-home'></i>
 					<span class="text">Home</span>
 				</a>
@@ -65,6 +65,3 @@
 		</form>
 	</nav>
 	<!-- NAVBAR -->
-
-	<!-- MAIN -->
-	<main>
