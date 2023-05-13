@@ -56,12 +56,14 @@ body {
 	background: var(--blue);
 }
 
-/* PROFILE */
+/* SETTINGS */
+
 .settings {
 	display: flex;
-
+	flex-flow: column;
 }
-/* PROFILE */
+
+/* SETTINGS */
 
 /* ABOUT ME */
 

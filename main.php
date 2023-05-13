@@ -7,11 +7,13 @@
     require_once 'includes/header.php'; 
 ?>
 
+<P>Hello, John</P>
 <div class="settings">
-    <P>Hello, John</P>
     <a href="">Edit Profile</a>
     <a href="">Logout</a>
 </div>
+
+
 
 
 
