@@ -1,8 +1,7 @@
 <?php
 $title = "Login";
 include 'connect.php';
-
-session_unset();
+include 'session.php';
 
 if (isset($_POST['btnLogin'])) {
     $uname = $_POST['txtusername'];

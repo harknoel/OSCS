@@ -1,6 +1,7 @@
 <?php
   $title = "Register";
   require_once 'createUser.php';
+  include 'session.php';
 ?>
   <style>
     body {

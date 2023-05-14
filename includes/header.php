@@ -68,4 +68,3 @@
 
 	<!-- MAIN -->
 	<main>
-		<?php session_start() ?>
