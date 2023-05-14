@@ -8,7 +8,7 @@ if (isset($_POST['btnLogin'])) {
     $uname = $_POST['txtusername'];
     $pwd = $_POST['txtpassword'];
 
-    $sql = "select * from tbluseraccount where username='".$uname."' and password ='".$pwd."'";
+    $sql = "select * from tbluseraccount where username='".$uname."'";
     $result = mysqli_query($con, $sql);
     $count = mysqli_num_rows($result);
 
