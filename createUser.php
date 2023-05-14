@@ -1,4 +1,5 @@
 <?php
+    include 'session.php';
     include 'connect.php';
     $mysqli = new mysqli('localhost', 'root', '', 'dbf2bontilaohark') or die(mysqli_error($mysqli));
 
@@ -13,7 +14,8 @@
         $count = mysqli_num_rows($result);
 
         if ($count > 0) {
-            header("Location: index.php");
+            $_SESSION['register-message'] = "<div class='fail'>Username already exist. Try again.</div>";
+            header("Location: register.php");
         } 
         else {
             $insertQuery = "INSERT INTO tbluseraccount (firstname, lastname, username, password) 

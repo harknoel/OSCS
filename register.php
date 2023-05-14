@@ -1,7 +1,6 @@
 <?php
   $title = "Register";
-  require_once 'createUser.php';
-  include 'session.php';
+  include 'createUser.php';
 ?>
   <style>
     body {
@@ -52,10 +51,29 @@
     .form-group input[type="submit"]:hover {
       background-color: #45a049;
     }
+
+    .success {
+      color: green;
+    }
+
+    .fail {
+      color: red;
+    }
+
+    .success, .fail {
+      padding-bottom: 5px;
+      font-size: small;
+    }
   </style>
 
   <div class="container">
     <h2>Registration Form</h2>
+    <?php
+      if(isset($_SESSION['register-message'])) {
+        echo $_SESSION['register-message'];
+        unset($_SESSION['register-message']);
+      }
+    ?>
     <form action="createUser.php" method="POST">
       <div class="form-group">
         <label for="username">Username:</label>
