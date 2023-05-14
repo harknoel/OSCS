@@ -6,6 +6,8 @@
     $contact = '';
 	include 'connect.php';
     require_once 'includes/header.php'; 
+	include 'session.php';
+	include 'login-check.php';
 ?>	
 <?php
 	$query = 'SELECT * FROM tblguest';

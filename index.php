@@ -85,10 +85,29 @@ if (isset($_POST['btnLogin'])) {
     .container p a:hover {
         text-decoration: underline;
     }
+
+    .success {
+        color: green;
+    }
+
+    .fail {
+        color: red;
+    }
+
+    .success, .fail {
+        padding-bottom: 5px;
+        font-size: small;
+    }
 </style>
 
 <div class="container">
     <h2>Login</h2>
+    <?php
+        if(isset($_SESSION['not-login'])) {
+            echo $_SESSION['not-login'];
+            unset($_SESSION['not-login']);
+        }
+    ?>
     <form action="index.php" method="POST">
         <input type="text" name="txtusername" placeholder="Username" required>
         <input type="password" name="txtpassword" placeholder="Password" required>
