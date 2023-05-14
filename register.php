@@ -64,6 +64,9 @@
       padding-bottom: 5px;
       font-size: small;
     }
+    p {
+      padding-left: 85px;
+    }
   </style>
 
   <div class="container">
@@ -94,5 +97,5 @@
       <div class="form-group">
         <input type="submit" name="btnAdd" value="Register">
       </div>
-    </form>
+      <p>Already have an account? <a href="index.php">Login</a></p>
   </div>

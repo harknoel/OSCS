@@ -1,6 +1,7 @@
 <?php
     $title = 'Update Profile';
     require_once 'includes/header.php';
+    include 'session.php';
 
     include 'connect.php';
     
@@ -15,9 +16,9 @@
         $fname = $_POST['txtFirstname'];
         $lname = $_POST['txtLastname'];
 
-        $sql = "UPDATE tblaccount SET password = '".$pwd."', firstname = '".$fname."', lastname = '".$lname."' where username = '".$_SESSION['username']."'";
+        $sql = "UPDATE tbluseraccount SET password = '".$pwd."', firstname = '".$fname."', lastname = '".$lname."' where username = '".$_SESSION['username']."'";
         mysqli_query($con, $sql);
-        $sql = "SELECT * FROM tblaccount WHERE username = '".$_SESSION['username']."'";
+        $sql = "SELECT * FROM tbluseraccount WHERE username = '".$_SESSION['username']."'";
         $res = mysqli_query($con, $sql);
         $row = mysqli_fetch_array($res);
 

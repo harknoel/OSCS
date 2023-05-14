@@ -18,10 +18,11 @@
             header("Location: register.php");
         } 
         else {
-            $insertQuery = "INSERT INTO tbluseraccount (firstname, lastname, username, password) 
-                            VALUES ('$firstname', '$lastname', '$username', '$password')";
+            $insertQuery = "INSERT INTO tbluseraccount (username, password, firstname, lastname) 
+                            VALUES ('$uname', '$pwd', '$fname', '$lname')";
             $insertResult = mysqli_query($con, $insertQuery);
-            header("Location: index.php");
+            $_SESSION['register-message'] = "<div class='success'>Successfully registered.</div>";
+            header("Location: register.php");
         }
     }
 ?>
