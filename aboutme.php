@@ -5,6 +5,8 @@
 	$aboutme = 'active';
     $contact = '';
     require_once 'includes/header.php'; 
+    include 'session.php';
+	include 'login-check.php';
 ?> 
     <section class="aboutme-container">
         <div class="container">
