@@ -4,9 +4,6 @@
     include 'session.php';
 
     include 'connect.php';
-    
-    if($_SESSION['username'] == "")
-        header("location: login.php");
 
     $sql = "select * from tbluseraccount where username = '".$_SESSION['username']."'";
     $res = mysqli_query($con, $sql);
@@ -18,9 +15,6 @@
 
         $sql = "UPDATE tbluseraccount SET password = '".$pwd."', firstname = '".$fname."', lastname = '".$lname."' where username = '".$_SESSION['username']."'";
         mysqli_query($con, $sql);
-        $sql = "SELECT * FROM tbluseraccount WHERE username = '".$_SESSION['username']."'";
-        $res = mysqli_query($con, $sql);
-        $row = mysqli_fetch_array($res);
 
         header("location: main.php");
     }
