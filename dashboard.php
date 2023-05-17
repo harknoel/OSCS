@@ -73,6 +73,8 @@ $resultName = mysqli_query($con, $queryName);
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 20px;">
 	<div style="background-color: #f2f2f2; padding: 20px; border-radius: 10px; width: 300px; text-align: center; margin-bottom: 20px;">
+		<h1>Guest Users by Country</h1>
+		<br>
 		<div style="background-color: #007bff; width: 80%; margin-bottom: 5px; color: #fff; padding: 5px;">United States (80)</div>
 		<div style="background-color: #ff4d4d; width: 60%; margin-bottom: 5px; color: #fff; padding: 5px;">Germany (60)</div>
 		<div style="background-color: #ffa64d; width: 40%; margin-bottom: 5px; color: #fff; padding: 5px;">Brazil (40)</div>
