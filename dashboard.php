@@ -205,8 +205,8 @@ $resultName = mysqli_query($con, $queryName);
 						<td><?php echo $row['guestName'] ?></td>
 						<td><?php echo $row['country'] ?></td>
 						<td>
-							<a class="status view" href="guestuser.php">VIEW</a>
-							<a href="delete.php?deleteid=<?php echo $row['guestID']; ?>">DELETE</a>
+							<a class="status view" href="updateGuest.php?updateid=<?php echo $row['guestID']; ?>">UPDATE</a>
+							<a class="status delete" href="delete.php?deleteid=<?php echo $row['guestID']; ?>">DELETE</a>
 						</td>
 					</tr>
 				<?php endwhile; ?>
