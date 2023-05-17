@@ -1,7 +1,7 @@
 <?php
-    include 'connect.php';
+include 'connect.php';
 
-    $query = "DELETE FROM tblguest where guestID = $deleteid";
-    $result = mysqli_query($con, $query);
+$query = "DELETE FROM tblguest WHERE guestID = '" . $_GET['deleteid'] . "'";
+$result = mysqli_query($con, $query);
 
-    header("Location: dashboard.php");
+header("Location: dashboard.php");
