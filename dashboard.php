@@ -198,6 +198,7 @@ $resultName = mysqli_query($con, $queryName);
 			<tbody>
 				<?php
 				while ($row = $resultset->fetch_assoc()) :
+					$id = $row['guestID'];
 				?>
 					<tr>
 						<td><?php echo $row['guestID'] ?></td>
@@ -205,7 +206,7 @@ $resultName = mysqli_query($con, $queryName);
 						<td><?php echo $row['country'] ?></td>
 						<td>
 							<a class="status view" href="guestuser.php">VIEW</a>
-							<a class="status delete" href="">DELETE</a>
+							<a class="status delete" href="delete.php?deleteid=<?php echo $row['guestID']; ?>">DELETE</a>
 						</td>
 					</tr>
 				<?php endwhile; ?>
